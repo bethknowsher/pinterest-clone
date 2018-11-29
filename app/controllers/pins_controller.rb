@@ -4,16 +4,16 @@ before_action :find_pin, only: [:show, :edit, :update, :destroy]
     @pins = Pin.all.order("created_at DESC")
   end
 
-  def new
-    @pin = Pin.new
-  end
-
   def show
   end
 
- def create
-    @pin = Pin.new(pin_params)
+  def new
+    @pin = current_user.pins.build
+   end
 
+  def create
+    @pin = current_user.pins.build(pin_params)
+    
     if @pin.save
       redirect_to @pin, notice: "Successfully created new Pin"
     else
