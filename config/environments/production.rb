@@ -83,6 +83,10 @@ Rails.application.configure do
   # require 'syslog/logger'
   # config.logger = ActiveSupport::TaggedLogging.new(Syslog::Logger.new 'app-name')
 
+  # Paperclip config:
+Paperclip.options[:image_magick_path] = "/opt/ImageMagick/bin"
+Paperclip.options[:command_path] = "/opt/ImageMagick/bin"
+
   if ENV["RAILS_LOG_TO_STDOUT"].present?
     logger           = ActiveSupport::Logger.new(STDOUT)
     logger.formatter = config.log_formatter
