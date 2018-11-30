@@ -13,7 +13,7 @@ before_action :find_pin, only: [:show, :edit, :update, :destroy]
 
   def create
     @pin = current_user.pins.build(pin_params)
-    
+
     if @pin.save
       redirect_to @pin, notice: "Successfully created new Pin"
     else
