@@ -1,0 +1,15 @@
+{
+  "name": "pinterest-clone",
+  "scripts": {
+  },
+  "env": {
+  },
+  "formation": {
+  },
+  "addons": [
+
+  ],
+  "buildpacks": [
+
+  ]
+}
