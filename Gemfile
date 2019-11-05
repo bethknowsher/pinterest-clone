@@ -15,7 +15,7 @@ gem 'masonry-rails', '~> 0.2.4'
 gem 'actionview', '>= 5.2.1.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.1', '>= 5.2.1.1'
-gem 'pg'
+
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
@@ -52,6 +52,7 @@ end
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
   gem 'web-console', '>= 3.3.0'
+  gem 'pg'
 end
 
 group :test do
