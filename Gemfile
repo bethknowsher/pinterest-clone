@@ -14,7 +14,7 @@ gem 'railties', '>= 5.2.1.1'
 gem 'masonry-rails', '~> 0.2.4'
 gem 'actionview', '>= 5.2.1.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.2.1', '>= 5.2.1.1'
+gem 'rails', '~> 7.0.2'
 
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
